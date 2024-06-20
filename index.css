@@ -1,0 +1,278 @@
+#body_wrapper {
+	position: relative;
+	width: 1360px;
+	height: 1180px;
+	margin: auto;
+}
+
+.bounce {
+	animation: bounce 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0%,
+	100% { transform: translateY(-20px); }
+	45%,
+	55% { transform: translateY(0px); }
+}
+
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid black;
+	padding: 8px;
+}
+td button {
+	position: absolute;
+	left: -50px;
+}
+
+#main_chart {
+	width: 650px;
+	float: left;
+}
+
+#main_chart .candidate text {
+	font-size: 22px;
+}
+
+#chart_buttons {
+	position: absolute;
+	top: 28px;
+	left: 635px;
+	width: 130px;
+	margin: -18px;
+	text-align: right;
+	float: left;
+}
+
+#chart_buttons button {
+	width: 40px;
+	height: 40px;
+	padding-top: 0px;
+}
+
+#chart_buttons img {
+	width: 25px;
+}
+
+#control_area {
+	float: left;
+	width: 720px;
+	margin-left: 20px;
+}
+
+#toolbar  {
+	float: left;
+	max-width: 360px;
+	height: 125px;
+}
+#toolbar p {
+	margin: 4px;
+}
+#electorate_buttons #candidate_buttons {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#results_table_label {
+	margin: 0px;
+	height: 40px;
+	font-size: 24px;
+	text-align: center;
+}
+#results_table {
+	float: left;
+	margin-top: 5px;
+}
+#results_table thead td, #results_table_body td:nth-child(1), #cardinal_table_body td:nth-child(1) {
+	font-size: 22px;
+	text-align: center;
+	min-width: 30px;
+}
+#results_table_body .grid-loser {
+	background-color: #ddadad;
+}
+#results_table_body .grid-winner {
+	background-color: #b9fcb9;
+	font-weight: bold;
+}
+#results_table_body .grid-majority-winner {
+	background-color: #22fc66;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#results_table_body td:hover,         #cardinal_table_body td:hover         {background-color: yellow !important;}
+#results_table_body td:nth-child(1),  #cardinal_table_body td:nth-child(1)  {background-color: #eeeeee !important;}
+#results_table thead td,              #cardinal_table thead td              {background-color: #eeeeee; height: 50px;}
+#results_table thead td:nth-child(1), #cardinal_table thead td:nth-child(1) {background-color: #dddddd;}
+#results_table td.highlighted,        #cardinal_table td.highlighted        {background-color: #ffff88;}
+.grid-null {background-color: #bbbbbb !important;}
+
+#specialViewTabs {
+	float: right;
+	width: 360px;
+	align: center;
+}
+#specialViewTabContent {
+	float: right;
+	width: 360px;
+	min-height: 300px;
+}
+#cardinal_tab_content {
+	border: 1px solid black;
+	padding: 2px;
+}
+#utility_winner_table {
+	margin-top: 10px;
+	margin-right: 24px;
+	margin-bottom: 35px;
+	margin-left: 24px;
+	height: 80px;
+}
+#utility_winner_table td {
+	padding: 2px;
+	min-width: 28px;
+	max-width: 28px;
+	height: 28px;
+	text-align: center;
+}
+#utility_winner_label {
+	margin: 0px;
+	padding: 2px;
+	width: 308px;
+	font-size: 12px;
+	text-align: center;
+}
+#sankey_tab_content {
+	border: 1px solid black;
+	padding: 8px;
+}
+#sim_tab_content, #heatmap_tab_content {
+	border: 1px solid black;
+	padding: 8px;
+}
+.sim-controls {
+	margin-bottom: 5px;
+}
+
+#cardinal_table {
+	text-align: center;
+}
+#cardinal_table table {
+	width: 100%;
+}
+#cardinal_table thead td:nth-child(2), #cardinal_table thead td:nth-child(3) {
+	font-size: 12px;
+	padding: 4px 4px 4px 4px;
+	width: 26px;
+}
+.dispo-control-row {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+#cardinal_table .dispo-icon {width: 20px; height: 20px; margin-top: -8px;}
+
+#cardinal_table .slider {width: 122px; height: 16px; margin-top: 2px;}
+
+#sankeyDescription {
+	display: flex;
+	align-items: center;
+	padding: 2px;
+	font-size: 0.75em;
+	font-style: italic;
+	height: 40px;
+}
+.nav-link {
+	max-width: 100px;
+}
+.nav-tabs .nav-link.active {
+	border-color: #000 #000 #fff;
+}
+
+#method_table {
+	position: relative;
+	width: 600px;
+	margin: 5px;
+	float: right;
+}
+#method_table td {
+	min-width: 49px;
+	text-align: center;
+	font-variant-numeric: tabular-nums;
+}
+#method_table_body .method-name, #correlation_table .method-name {
+	min-width: 165px;
+	padding: 8px;
+	font-size: 16px;
+	text-align: left;
+}
+#method_table thead td {
+	font-size: 12px;
+}
+#method_table tr:nth-child(even) {background-color: #f2f2f2;}
+
+.result-highlight-conW {background-color: #33ccee; font-weight:bold;}
+.result-highlight-0    {background-color: #aaff33;}
+.result-highlight-1    {background-color: #ddff33;}
+.result-highlight-2    {background-color: #ffee33;}
+.result-highlight-3    {background-color: #ffbb33;}
+.result-highlight-4    {background-color: #ff8833;}
+.result-highlight-5    {background-color: #ff5533;}
+.result-highlight-conL {background-color: #dd3838;}
+#method_table tr:hover               {background-color: yellow;}
+
+/* #method_table_body td:nth-child(4) { width: 175px;} */
+.strategy-token-svg {
+	width: 175px;
+	height: 26px;
+}
+
+#correlation_table {
+	float: left;
+	margin: 20px;
+}
+#correlation_table thead .vertical-method-name {
+	padding: 8px;
+	writing-mode: vertical-rl;
+	font-size: 16px;
+	text-orientation: mixed;
+}
+#correlation_table td {
+	font-size: 12px;
+	padding: 4px;
+	min-width: 40px;
+	max-width: 40px;
+}
+
+div.tooltip {
+	position: absolute;
+	padding: 0 .5rem;
+	background: #FFFFFF;
+	color: #313639;
+	border: 1px solid #313639;
+	border-radius: 8px;
+	pointer-events: none;
+	max-width: 375px;
+}
+#contour_legend {font-size: 1.2rem; text-align: center; padding-top: 10px; width: 178px;}
+#contour_legend_title {font-size: 1.2rem; text-align: center; margin-bottom: 10px; }
+#contour_legend_line2 {font-size: 1.0rem; font-style: italic;  text-align: center; margin-bottom: 0px;}
+#contour_legend_methodName {font-size: 1.0rem; font-style: italic;  text-align: center; margin-bottom: 16px; color: blue;}
+#contour_legend .contour-legend-entry {font-size: 1.0rem; text-align: left; text-indent: 55px; margin-bottom: 4px}
+#hexbin_tooltip {font-size: 1.2rem; text-align: center; padding-top: 10px; padding-bottom: 15px; position: fixed; }
+#cardinal_tooltip {font-size: 1.2rem; text-align: center; padding-top: 10px; padding-bottom: 15px; }
+#cardinal_tooltip .voter-id-label {font-size: 1.0rem; font-style: italic;  text-align: center;}
+#cardinal_tooltip .sample-ballot-line        {font-size: 1.1rem; text-align: left; text-indent: 55px; margin-bottom: 4px}
+#cardinal_tooltip .sample-ballot-line-regret {font-size: 1.1rem; text-align: left; text-indent: 55px; margin-bottom: 4px; color: red;}
+#cardinal_tooltip .sample-ballot-dispo2-warning {font-size: 0.8rem; font-style: italic; text-align: center; margin-bottom: 4px; width: 200px; height: 30px}
+#cardinal_tooltip .sample-ballot-regret-message {font-size: 0.8rem; font-style: italic; text-align: center; margin-bottom: 4px; width: 200px; color: red}
+#info_tooltip        {font-size: 0.8rem;	                 text-align: left;  position: fixed;}
+#info_tooltip .title {font-size: 1.4rem; font-weight: bold;  text-align: center;}
+#info_tooltip .aka   {font-size: 1.0rem; font-style: italic; text-align: center;}
